@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-// import { addItem } from "../../redux/cart/cart.action";
 import { addItem } from '../../redux/cart/cartAction';
 import CustomButton from "../custom-button/custom-button.component";
 import Options from './Options'
@@ -25,7 +24,7 @@ class CollectionItem extends React.Component {
 
     render() {
         const { item, addItem } = this.props;
-        const { name, price, image_src, vendor, options, tag } = item;
+        const { name, price, image_src, vendor, options } = item;
 
         return (
             <div>
